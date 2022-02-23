@@ -36,7 +36,23 @@ Se aplicarmos para, por exemplo, ul's, todas as ul's serão estilizadas, por iss
 3. Seletor por ID;
 
 #selectorid {
+    background-color: burlywood;
     color: red;
+    font-family: monospace;
+    font-size: 20px;
 }
 
 */
+
+/*
+    Dimensionamento; width and height
+
+*/
+.secaoDetalhesConta{
+    width: 300px;
+    height: 400px;
+    background-color: blue;
+
+}
+
+
