@@ -1,0 +1,42 @@
+/* CSS - Cascading Style Sheet  (Folha de estilo em cascata) */
+
+/*
+    Regras de estilos -> 
+        -Seletor: Quem eu quero aplicar aquele estilo?
+            seletor: {
+                propriedade: valor
+                ex. cor: vermelho
+            } -> regra CSS
+
+*/
+/* TIPOS DE SELETORES 
+
+1. Seletor por elemento/tag;
+
+*/
+
+header {
+    background-color: burlywood;
+}
+
+/* 
+
+2. Seletor por classes;
+Podemos selecionar as classes das tags e estilizarmos com mais facilidade.
+Se aplicarmos para, por exemplo, ul's, todas as ul's serão estilizadas, por isso usamos os seletores por classes.
+
+*/
+
+.secaoDetalhesConta {
+    background-color: cadetblue;
+}
+
+/* 
+
+3. Seletor por ID;
+
+#selectorid {
+    color: red;
+}
+
+*/
