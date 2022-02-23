@@ -153,3 +153,30 @@ body{
   color: #000;
   margin: 10px;
 }
+
+.secaoTransacao_pix img {
+  width: 100%;
+  max-width: 150px;
+}
+
+.secaoTransacao_boxOpcao {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d2d2d2;
+  max-width: 500px;
+  padding: 14px 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.15);
+  margin: 20px 0;
+
+}
+
+.secaoTransacao_boxOpcao img {
+  width: 100%;
+  max-width: 80px;
+  margin-right: 10px;
+}
+
+.secaoTransacao_boxOpcao p {
+  font-size: 16px;
+}
