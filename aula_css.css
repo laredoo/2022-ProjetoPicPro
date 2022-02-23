@@ -48,11 +48,30 @@ Se aplicarmos para, por exemplo, ul's, todas as ul's serão estilizadas, por iss
     Dimensionamento; width and height
 
 */
+
 .secaoDetalhesConta{
     width: 300px;
     height: 400px;
     background-color: blue;
-
 }
+
+/*
+    Posicionamento; Já há um posicionamento padrão, um embaixo do outro, com um espaçamento e estilo padrão.
+    
+    -----> inline: apenas tags que ocupam comporamento de linha; Ex. strong. Um strong do lado do outro tem um comportamento de linha, 
+                    um fica do lado do outro.
+                    NÃO CONSEGUIMOS SETAR ALTURA NEM LARGURA
+    
+    -----> inblock: São blocos, ocupam 100% do documento. Exemplo: tag <p> , h2, section, ...
+                    Ficam um embaixo do outro.
+
+    OBS: conseguimos mudar isso, conseguimos mudar e setar um inline como um bloco.
+
+    -----> inline-block: É um inline com privilégios de block
+
+    -----> flexbox: Auxilia em posicionar os elementos, centralizar, posicionar no topo, no final, etc...
+
+
+*/
 
 
