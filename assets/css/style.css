@@ -1,3 +1,126 @@
 body{
   background-color: #4a8864;
+  font-family: 'Poppins', sans-serif;
 }
+
+.cabecalho {
+  padding: 20px 0; /* primeiro para cima e baixo segundo para os lados */
+  border-bottom: 1px solid white;
+}
+
+.cabecalho .container {
+  display: flex;
+  align-items: center;
+}
+
+/*seletor por hierarquia*/
+.cabecalho figure img{
+  width: 100%;
+  max-width: 140px;
+}
+
+.cabecalho .cabecalho_logoPicpro {
+  border-right: 1px solid white;
+  margin-right: 15px;
+}
+
+.secaoDetalhesConta {
+  color: #fff;
+  padding: 60px 0 30px; /* preenchimento */ 
+}
+
+.secaoDetalhesConta_sobreoUsuario {
+  display: flex;
+  align-items: center;
+}
+
+.secaoDetalhesConta_sobreoUsuario p{
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.secaoDetalhesConta_sobreoUsuario img{
+  width: 100%;
+  max-width: 50px;
+  
+}
+
+.secaoDetalhesConta_sobreoUsuario p  strong{
+  display: block;
+  font-weight: bold; /*aumenta a espessura da fonte*/
+}
+
+.secaoDetalhesConta_sobreoSaldo {
+  border-top: 1px solid rgba(0,0,0, 0.15);
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  align-items: center;
+}
+
+.secaoDetalhesConta_sobreoSaldo p {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.secaoDetalhesConta_sobreoSaldo p strong{
+  display: block;
+  font-weight: bold;
+}
+
+.secaoDetalhesConta_sobreoSaldo button {
+  background-color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 60px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.secaoDetalhesConta_opcoesTransacoes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.secaoDetalhesConta_opcoesTransacoes li {
+  background-color: #1f6f54;
+  width:  170px;
+  height: 177px;
+  border-radius: 10px 0 0;
+  padding: 40px 20px;
+}
+
+.secaoDetalhesConta_opcoesTransacoes li img {
+  width: 100;
+  max-width: 40px;
+}
+
+.secaoDetalhesConta_opcoesTransacoes li p {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+  line-height: 25px;
+  width: 80px;
+}
+
+.secaoTransacao {
+  background-color: white;
+  border-radius: 20px 0 0;
+  border-bottom: 15px solid #f4f4f4;
+  padding: 30px 0 ;
+}
+
+.secaoTransacao_avisoSelecao p {
+  font-size: 25px;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.15);
+  padding: 30px 60px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.15);
+}
+
+.secaoTransacao_avisoSelecao img {
+  margin: 30px 0 90px;
+  width: 100%;
+}
+
