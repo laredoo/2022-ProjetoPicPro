@@ -103,7 +103,30 @@ let filaAtendimento = ["lucas", "larissa", "eduarda", "pau"]
 let nomeMaisComprido = "a"
 
 for(let i = 0; i < filaAtendimento.length; i++) {
-    if(filaAtendimento[i].length > maisLindo.length)
+    if(filaAtendimento[i].length > nomeMaisComprido.length)
         nomeMaisComprido = filaAtendimento[i]
 }
 console.log(nomeMaisComprido)
+
+// ******************************************************/
+//          DOM - MODELO DE OBJETO DO DOCUMENTO
+// ******************************************************/
+
+//CONSEGUIMOS ACESSAR QUALQUER ELEMENTO DE HTML E TRAZER PARA JS
+//ASSIM PODEMOS FAZER QUALQUER TIPO DE MANIPULAÇÃO
+
+//document acessa o documento
+//querySelector => seletor de elemento
+
+//.pessoa acessa a classe (HTML) pessoa
+
+let divPessoa = document.querySelector(".pessoa")
+
+let fila = ["lucas" , "duda" , "vitor"]
+
+
+for(i = 0; i< fila.length; i++) {
+    let div = document.createElement("div")
+    div.innerText = fila[i]
+    divPessoa.appendChild(div)
+}
