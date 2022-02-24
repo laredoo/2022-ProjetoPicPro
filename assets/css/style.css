@@ -75,6 +75,12 @@ body{
   font-weight: bold;
 }
 
+.secaoDetalhesConta_sobreoSaldo p strong img {
+  width: 100%;
+  max-width: 20px;
+  margin: 0 5px;
+}
+
 .secaoDetalhesConta_sobreoSaldo button {
   background-color: white;
   border: none;
