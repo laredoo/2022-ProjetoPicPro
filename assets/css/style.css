@@ -3,6 +3,12 @@ body{
   font-family: 'Poppins', sans-serif;
 }
 
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 150px;
+}
+
 .cabecalho {
   padding: 20px 0; /* primeiro para cima e baixo segundo para os lados */
   border-bottom: 1px solid white;
@@ -42,6 +48,7 @@ body{
 .secaoDetalhesConta_sobreoUsuario img{
   width: 100%;
   max-width: 50px;
+  margin-bottom: 10px;
   
 }
 
@@ -196,7 +203,7 @@ body{
 }
 
 .secaoTransacao_boleto p {
-  font-size: 18px;
+  font-size: 20px;
   max-width: 500px;
   margin: 20px 0;
 
@@ -206,10 +213,73 @@ body{
   width: 100%;
   max-width: 500px;
   background-color: #f4f4f4;
-  font-size: 10px;
+  font-size: 18px;
   height: 50px;
   padding: 0 80px;
   border-radius: 10px;
   border:1px solid #d2d2d2;
   color: 0 0 0;
+  box-sizing: border-box; /*essa especificação não permite que o elemento tenha uma largura maior que o máximo (500px), independente do padding */
+}
+
+.secaoTransacao_cobrar {
+} 
+
+.secaoTransacao_cobrar img {
+  width: 100%;
+  max-width: 80px;
+}
+
+.secaoTransacao_cobrar h2 {
+  font-size: 18px;
+  font-weight: bold;
+
+}
+
+.secaoTransacao_cobrar p{
+  font-size: 18px;
+  max-width: 500px;
+  margin: 20px 0;
+}
+
+.secaoTransacao_cobrar .secaoTransacao_boxOpcao p {
+  margin-left: 10px;
+}
+
+.rodape {
+  background-color: white;
+}
+
+.rodapeMenuPrincipal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.rodapeMenuPrincipal li {
+  text-align: center;
+}
+
+.rodapeMenuPrincipal li a {
+  color: black;
+  text-decoration: none;
+}
+
+.rodapeMenuPrincipal li a img {
+  width: 100%;
+  max-width: 40px;
+}
+
+.rodapeMenuPrincipal li a p {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.rodape_item--pagar {
+  transform: translateY(-35px);
+}
+
+.rodapeMenuPrincipal .rodape_item--pagar a img {
+  max-width: 100px;
 }
