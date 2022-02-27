@@ -133,7 +133,7 @@ for(i = 0; i< fila.length; i++) {
 }
 */
 
-
+/*
 //SELETORES - querySelector / querySelectorAll / getElementById
 //obs: querySelector é um seletor genérico para qualquer elemento (classe, id, tag ...)
 
@@ -163,3 +163,54 @@ for(let i=0;i < filaAtendimento.length;i++) {
     ulNomes.appendChild(liNome)
     console.log(liNome)
 }
+*/
+
+//EVENTOS --> qualquer coisa feita no navegador
+//--> mexer o mouse no navegador, clicar, arrastar a tela, etc ...
+
+//1° selecionar o input
+    //A - pegar um valor do campo
+//2° adicionar um evento no botao/clique
+//3° guardar o valor em algum lugar
+//4° selecinar a lista
+//5° criar um li
+//6° alimentar com o valor do input
+//7° jogar ele para dentro da lista
+
+
+//SELECIONANDO  O BUTTON DO HTML
+const btnAdicionar = document.querySelector(".btnAdicionar")
+
+//INTERCEPTANDO EVENTO NO BOTÃO
+    //Nesse caso é um botao de clique
+btnAdicionar.addEventListener("click", pegarValores)
+
+//SELECIONANDO A LISTA
+const ol = document.querySelector("ol")
+
+//FUNÇÃO QUE VAI EXECUTAR
+function pegarValores(){
+   
+    //SELECIONANDO O INPUT
+    const inputTexto = document.querySelector(".inputTexto")
+
+    //PEGANDO O VALOR DO INPUT
+    const valorInput = inputTexto.value
+
+    //CRIANDO LI PARA ALIMENTAR A LISTA
+    const li = document.createElement("li")
+
+    //ALIMENTAR COM O VALOR DO CAMPO
+    li.innerText = valorInput
+
+    //ADICIONANDO O LI COM AS INFORMAÇÕES DA LISTA
+    ol.appendChild(li)
+
+}
+
+//ELEMENTO QUE VOCÊ QUER ESCUTAR
+//TIPO DE EVENTO CLIQUE
+//O QUE VOCE QUER QUE ELE FAÇA
+
+
+
