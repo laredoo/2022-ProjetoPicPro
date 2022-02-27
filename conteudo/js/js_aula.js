@@ -1,4 +1,4 @@
-
+/*
 //cout
 console.log("Olá mundo")
 
@@ -120,6 +120,7 @@ console.log(nomeMaisComprido)
 
 //.pessoa acessa a classe (HTML) pessoa
 
+/*
 let divPessoa = document.querySelector(".pessoa")
 
 let fila = ["lucas" , "duda" , "vitor"]
@@ -129,4 +130,36 @@ for(i = 0; i< fila.length; i++) {
     let div = document.createElement("div")
     div.innerText = fila[i]
     divPessoa.appendChild(div)
+}
+*/
+
+
+//SELETORES - querySelector / querySelectorAll / getElementById
+//obs: querySelector é um seletor genérico para qualquer elemento (classe, id, tag ...)
+
+const btn = document.querySelector(".btnExtrato")
+//btn.style.background = "red"
+//btn.style.color = "blue"
+const list = document.querySelectorAll("ul li")
+console.log(list) //-->precisamos de um loop para acessar cada elemento desse array
+//console.log(btn)
+
+//CRIANDO ELEMENTOS NO JS
+const body = document.querySelector("body")
+const tagButton = document.createElement("button") //NOME DA TAG
+tagButton.innerText = "LAREDO"
+body.appendChild(tagButton) //->coloca um elemento dentro do outro
+
+let filaAtendimento = ["lucas","duda","arthur"]
+
+//criando lista de nomes
+//criamos um li
+let ulNomes = document.querySelector(".listaDeNomes")
+for(let i=0;i < filaAtendimento.length;i++) {
+   
+    //CRIANDO UM LI
+    const liNome = document.createElement("li")
+    liNome.innerText = filaAtendimento[i]
+    ulNomes.appendChild(liNome)
+    console.log(liNome)
 }
