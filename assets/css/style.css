@@ -38,6 +38,16 @@ body{
 .secaoDetalhesConta_sobreoUsuario {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.secaoDetalhesConta_sobreoUsuario--nome, .secaoDetalhesConta_sobreoUsuario--icones {
+  display:flex;
+  align-items: center;
+}
+
+.secaoDetalhesConta_sobreoUsuario--icones img {
+  margin: 0 10px;
 }
 
 .secaoDetalhesConta_sobreoUsuario p{
