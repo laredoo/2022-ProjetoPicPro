@@ -307,3 +307,54 @@ body{
 .rodapeMenuPrincipal .rodape_item--pagar a img {
   max-width: 100px;
 }
+
+/* desafio Hover */
+.secaoDetalhesConta_itemTransacao:hover {
+  background-color: #fff;
+  color: #1f6f54;
+}
+
+.secaoDetalhesConta_itemTransacao figure {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 50px;
+  width: 50px;
+}
+
+.secaoDetalhesConta_itemTransacao--qrCode figure{
+  background-image: url("../img/qrcode.png");
+}
+
+.secaoDetalhesConta_itemTransacao--pix figure{
+  background-image: url("../img/pix.png");
+}
+
+.secaoDetalhesConta_itemTransacao--codigo figure{
+  background-image: url("../img/codigo.png");
+}
+
+.secaoDetalhesConta_itemTransacao--cobrar figure{
+  background-image: url("../img/cobrar-icon.png");
+}
+
+.secaoDetalhesConta_itemTransacao--qrCode:hover figure {
+  background-image: url("../img/qrcode-verde.png");
+}
+
+.secaoDetalhesConta_itemTransacao--pix:hover figure {
+  background-image: url("../img/pix-verde.png");
+}
+
+.secaoDetalhesConta_itemTransacao--codigo:hover figure {
+  background-image: url("../img/boleto-verde.png");
+}
+
+.secaoDetalhesConta_itemTransacao--cobrar:hover figure {
+  background-image: url("../img/cobrar-verde.png");
+}
+
+.secaoDetalhesConta_itemTransacao figure img{
+  opacity: 0; /* escondemos a imagem */
+
+}
