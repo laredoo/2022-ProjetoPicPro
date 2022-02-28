@@ -22,5 +22,21 @@ function identificarOpcoes(event) {
     if(li.tagName == "LI"){
         //RECUPERANDO O ID
         const id = li.id
+
+        //SELECIONANDO UMA SESSAO UTILIZANDO O ID (ESCOLHA DO USUARIO)
+        const secaoEscolha = document.querySelector(`div[data-id="${id}"]`) //interpolação string. Não é string pois qualquer arquivo html é string, não int 
+
+        //REMOVENDO CLASSE SHOW
+        removeClasseMostrar()
+        
+        //ADICIONAR UMA CLASSE (show)
+        secaoEscolha.classList.add("show")
+    }
+}
+
+function removeClasseMostrar() {
+    const divs = document.querySelectorAll(".secaoTransacao .container div")
+    for(let i=0;i < divs.length; i++) {
+        divs[i].classList.remove("show")
     }
 }
