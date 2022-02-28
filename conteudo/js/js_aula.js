@@ -189,14 +189,14 @@ btnAdicionar.addEventListener("click", pegarValores)
 const ol = document.querySelector("ol")
 
 //FUNÇÃO QUE VAI EXECUTAR
-function pegarValores(){
+function pegarValores(event){
    
     //SELECIONANDO O INPUT
     const inputTexto = document.querySelector(".inputTexto")
 
     //PEGANDO O VALOR DO INPUT
     const valorInput = inputTexto.value
-
+ 
     //CRIANDO LI PARA ALIMENTAR A LISTA
     const li = document.createElement("li")
 
